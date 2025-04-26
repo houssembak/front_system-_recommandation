@@ -1,0 +1,97 @@
+.licence-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'image de fond */
+  height: 100vh; /* Ajuste la hauteur pour couvrir toute la vue */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Nécessaire pour positionner le pseudo-élément */
+}
+
+.licence-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/image/SQL-Server.jpg'); /* Chemin vers votre image */
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
+  background-position: center; /* Centre l'image */
+  opacity: 0.5; /* Ajustez l'opacité de l'image de fond */
+  z-index: -1; /* Place l'image de fond en arrière-plan */
+}
+
+.licence-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 255, 0.5); /* Fond bleu semi-transparent */
+  z-index: -1; /* Place le calque bleu au-dessus de l'image de fond mais en dessous du contenu */
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold; /* Applique le gras */
+  position: relative; /* Assure que le texte est au-dessus du calque */
+  z-index: 1;
+}
+
+.header h2 {
+  font-size: 1.5em;
+  color: #f0f0f0; /* Couleur de texte plus claire pour le sous-titre */
+  font-weight: bold; /* Applique le gras */
+  position: relative; /* Assure que le texte est au-dessus du calque */
+  z-index: 1;
+}
+
+.content {
+  margin-top: 20px;
+  position: relative; /* Assure que le texte est au-dessus du calque */
+  z-index: 1;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: bold; /* Applique le gras */
+}
+
+.activation {
+  margin-top: 30px;
+  font-size: 1.1em;
+  color: #f0f0f0; /* Couleur de texte plus claire pour l'activation */
+  position: relative; /* Assure que le texte est au-dessus du calque */
+  z-index: 1;
+}
+
+
+
+.description-section {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent pour la description */
+  border-radius: 10px;
+}
+
+.description-image {
+  width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+  height: auto;
+  margin-right: 20px;
+}
+
+.description-text {
+  font-size: 1em;
+  line-height: 1.6;
+  color: black; /* Couleur de texte plus claire pour la description */
+  text-align: left;
+}

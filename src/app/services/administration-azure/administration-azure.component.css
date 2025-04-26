@@ -1,0 +1,37 @@
+.administration-azure {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* Alignement en haut */
+}
+
+.image-placeholder {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-placeholder img {
+  width: 100%; /* L'image prend toute la largeur disponible */
+  height: auto; /* Maintient le ratio de l'image */
+  border-radius: 8px;
+}
+
+.administration-azure h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.administration-azure p {
+  flex: 2;
+  line-height: 1.6;
+}
+
+.example-card {
+  max-width: 400px;
+}

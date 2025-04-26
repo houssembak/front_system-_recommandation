@@ -1,0 +1,239 @@
+<div class="head">
+
+  <!-- Navbar en premier -->
+
+
+  <!-- Carrousel en dessous -->
+  <p-carousel (onPageChange)="resetAutoplay()" #carousel [value]="images" [numVisible]="1" [numScroll]="1"
+    [circular]="true" [autoplayInterval]="3000">
+    <ng-template let-image pTemplate="item">
+      <div class="carousel-image-container">
+        <img [src]="image" class="carousel-image" />
+
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
+
+<section id="partenaires" class="scroll-mt-[100px] py-16 md:py-20 max-md:mt-16 bg-gray-100">
+  <div class="w-[90%] mx-auto flex flex-col gap-10 md:gap-16 lg:gap-0">
+    <div class="flex flex-col items-center justify-center gap-8 lg:mb-10">
+      <h1
+      style="font-size: xx-large; font-weight: bold; margin-bottom: 20px;">
+      <span style="color: black;">Nos</span>
+      <span style="color: #1B15EA; margin-left: 8px;">Services</span>
+    </h1>
+    </div>
+
+    <div class="logo-slider">
+      <div class="logo-track">
+        <img src="https://ideacdn.net/shop/er/44/myassets/blogs/blog-55.png?revision=1720514590" alt="Logo 1">
+        <img src="https://ecr365.cloud/wp-content/uploads/2019/10/Microsoft-Visio-Plan-2.jpg" alt="Logo 2">
+        <img src="https://klint-consulting.com/wp-content/uploads/2023/04/Power-BI-Microsoft-logo.png" alt="Logo 3">
+        <img src="https://cloudit.com.eg/wp-content/uploads/2022/01/logo-1024x481-optimized.png" alt="Logo 4">
+        <img src="https://www.iloq.com/wp-content/uploads/2024/11/cyber-security.jpg" alt="Logo 5">
+
+
+        <img src="https://ideacdn.net/shop/er/44/myassets/blogs/blog-55.png?revision=1720514590" alt="Logo 1">
+        <img src="https://ecr365.cloud/wp-content/uploads/2019/10/Microsoft-Visio-Plan-2.jpg" alt="Logo 2">
+        <img src="https://klint-consulting.com/wp-content/uploads/2023/04/Power-BI-Microsoft-logo.png" alt="Logo 3">
+        <img src="https://cloudit.com.eg/wp-content/uploads/2022/01/logo-1024x481-optimized.png" alt="Logo 4">
+        <img src="https://www.iloq.com/wp-content/uploads/2024/11/cyber-security.jpg" alt="Logo 5">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div #stats
+  class="lg:w-[90%] mb-10 lg:mx-auto flex flex-wrap justify-center items-center sm:gap-x-10 gap-x-8 max-lg:!gap-y-0">
+  <div
+    class="relative flex flex-col lg:w-[200px] w-[180px] max-lg:w-[140px] text-white items-center justify-center h-[150px]">
+    <div class="flex items-center gap-x-1 text-black md:text-[70px] text-[50px] font-semibold relative mb-4">
+      <!-- Ajout de mb-4 -->
+      <span style="color: blue;" class="absolute gradient-text -left-10">+</span>
+      <span [countUp]="experience"></span>
+    </div>
+    <h4 class="mt-2 text-black text-center font-bold lg:text-base text-sm __className_528b4d">Ans d’expérience</h4>
+  </div>
+  <div
+    class="relative flex flex-col lg:w-[200px] w-[180px] max-lg:w-[140px] text-white items-center justify-center h-[150px]">
+    <div class="flex items-center gap-x-1 text-black md:text-[70px] text-[50px] font-semibold relative mb-4">
+      <!-- Ajout de mb-4 -->
+      <span style="color: blue;" class="absolute gradient-text -left-10">+</span>
+      <span [countUp]="projects"></span>
+    </div>
+    <h4 class="mt-2 text-black text-center font-bold lg:text-base text-sm __className_528b4d">Projets effectués</h4>
+  </div>
+  <div
+    class="relative flex flex-col lg:w-[200px] w-[180px] max-lg:w-[140px] text-white items-center justify-center h-[150px]">
+    <div class="flex items-center gap-x-1 text-black md:text-[70px] text-[50px] font-semibold relative mb-4">
+      <!-- Ajout de mb-4 -->
+      <span style="color: blue;" class="absolute gradient-text -left-10">+</span>
+      <span [countUp]="countries"></span>
+    </div>
+    <h4 class="mt-2 text-black text-center font-bold lg:text-base text-sm __className_528b4d">Pays</h4>
+  </div>
+  <div
+    class="relative flex flex-col lg:w-[200px] w-[180px] max-lg:w-[140px] text-white items-center justify-center h-[150px]">
+    <div class="flex items-center gap-x-1 text-black md:text-[70px] text-[50px] font-semibold relative mb-4">
+      <!-- Ajout de mb-4 -->
+      <span style="color: blue;" class="absolute gradient-text -left-10">+</span>
+      <span [countUp]="experts"></span>
+    </div>
+    <h4 class="mt-2 text-black text-center font-bold lg:text-base text-sm __className_528b4d">Experts métier</h4>
+  </div>
+  <div
+    class="relative flex flex-col lg:w-[200px] w-[180px] max-lg:w-[140px] text-white items-center justify-center h-[150px]">
+    <div class="flex items-center gap-x-1 text-black md:text-[70px] text-[50px] font-semibold relative mb-4">
+      <!-- Ajout de mb-4 -->
+      <span style="color: blue;" class="absolute gradient-text -left-10">+</span>
+      <span [countUp]="clients"></span>
+    </div>
+    <h4 class="mt-2 text-black text-center font-bold lg:text-base text-sm __className_528b4d">Clients</h4>
+  </div>
+</div>
+<!-- Encapsulation de la section avec un fond gris -->
+<div class="w-full bg-gray-100">
+  <!-- Partenaire Section -->
+  <section id="partenaires" class="partenaireContainer ms-32">
+
+    <h1
+      style="display: flex; text-align: center; width: 100%; justify-content: center; align-items: center; margin-top: 100px; font-size: xx-large; font-weight: bold; margin-bottom: 20px;">
+      <span style="color: black;">Nos</span>
+      <span style="color: #1B15EA; margin-left: 8px;">Partenaires</span>
+    </h1>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 20%); grid-gap: 1%;">
+      <!-- Card 1 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '8rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/R9W6ytA6CRPIO6CcQwJpXjtre717-s3x4uBEb_46awU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbWljcm9zb2Z0/L21pY3Jvc29mdF9Q/TkcxMy5wbmc" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/5R-U4NkKSvdJc5HeO3WLvKd9jZA06I418HkhGH7RIGE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYzL0NlZ2lkX2xv/Z29fMjAxODIucG5n" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/nMSAYGmmGAT05jox6FGYCG2zZIPGmZgjgFvoRxZHhaA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2FsZXNmb3JjZS5j/b20vbmV3cy93cC1j/b250ZW50L3VwbG9h/ZHMvc2l0ZXMvMy8y/MDIwLzEwL1NhbGVz/Zm9yY2VfQ29ycG9y/YXRlX0xvZ29fUkdC/LmpwZz93PTEwMjQ" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/e-OvI2TwhyBQoQLlfo4dqxGjBnu27YOvM_Rtt0oMrn8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGlnaWZpbmQuZnIv/d3AtY29udGVudC9w/bHVnaW5zL3BoYXN0/cHJlc3MvcGhhc3Qu/cGhwL2MyVnlkbWxq/WlQxcGJXRm5aWE1t/YzNKalBXaDBkSEJ6/SlROQkpUSkdKVEpH/ZDNkM0xtUnBaMmxt/YVc1a0xtWnlKVEpH/ZDNBdFkyOXVkR1Z1/ZENVeVJuVndiRzlo/WkhNbE1rWXlNREl6/SlRKR01ERWxNa1p2/Ym1WemRHOWpheTVx/Y0djbVkyRmphR1ZO/WVhKclpYSTlNVGN6/TVRNM05URXhNaTAx/TlRjMUpuUnZhMlZ1/UFRReVptRTVOV00z/TnpBMU1qZGpNVE0u/cS5qcGc" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 5 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/fQwv7fzqTFF3jiQ-wjOEoYBda09zOSq-Bs38Vg-sIZM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9iaXou/cHJsb2cub3JnL3dp/dHRpZ29uaWEvbG9n/by5wbmc" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 6 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/uOYf4-csIBrV2pXsX_t88_I56j2pgXVPRqYY61Qs3ok/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/cHVibGljLnNvZnR3/YXJlcmV2aWV3cy5j/b20vcHJvZHVjdGlv/bi9sb2dvcy9vZmZl/cmluZ3MvNDE1OS9s/YXJnZS9Lb2VyYmVy/X0xvZ29fYmxhY2su/cG5nPzE2NzI5NDk5/Nzk" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 7 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/IfrmBQNoMNgRVmF-kDY-HPWYdraLf9uo65Qs6y0OdGo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y29tcGFyYWJseS5j/b20vMjQ3NDkzNzMv/bC8xMDE1MTQvMTAx/NTE0X2xvZ29fY2Vu/dHJpYy1zb2Z0d2Fy/ZS5wbmc" />
+          </ng-template>
+        </p-card>
+      </div>
+
+      <!-- Card 8 -->
+      <div
+        class="mb-4 p-8 flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <p-card [style]="{ width: '10rem', overflow: 'hidden' }" class="shadow-lg hover:shadow-xl">
+          <ng-template pTemplate="header">
+            <img alt="Card" class="w-full grayscale hover:grayscale-0 transition-all duration-300"
+              src="https://imgs.search.brave.com/MbU4vCW3P-2HsoJPstE69o_ToWEnE4oeEUtg_8OwYfk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kMWhi/cHIwOXB3ejBzay5j/bG91ZGZyb250Lm5l/dC9sb2dvX3VybC9k/YXRhdGV4LWZiZDI4/OTI5.jpeg" />
+          </ng-template>
+        </p-card>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="expertiseContainer flex flex-col md:flex-row mx-8 mb-16" id="expertises">
+  <!-- Barre latérale (Aside) -->
+  <aside class="bg-blue-800 text-white w-full md:w-1/4 p-8 rounded-lg shadow-lg">
+    <!-- Titre "NOS EXPERTISES" -->
+    <h1 class="text-3xl font-bold mb-4">
+      NOS<br>EXPERTISES
+    </h1>
+
+    <!-- Description -->
+    <p class="text-lg">
+      Nous fournissons des licences Microsoft adaptées à vos besoins (Microsoft 365, Windows, SQL Server…) et des
+      formations PBI Pro pour optimiser votre analyse de données. Nos services couvrent également l’administration IT,
+      la cybersécurité et la migration Cloud.
+    </p>
+  </aside>
+
+  <!-- Contenu principal (Image) -->
+  <div class="w-full md:w-3/4 mt-8 md:mt-0 md:ml-8">
+    <img alt="Expertises" class="w-full h-auto rounded-lg shadow-lg"
+      src="https://www.infocse.fr/wp-content/uploads/cse-le-nouveau-calendrier-des-expertises-en-cas-de-consultation.jpg" />
+  </div>
+</div>
+<div class="bg-gray-100 py-12 px-10 flex flex-col md:flex-row justify-between items-center rounded-lg">
+  <h2 class="text-6xl md:text-7xl font-bold text-black text-center md:text-left">
+    Accélérez votre transformation digitale avec les licences Microsoft et des solutions sur mesure<br>
+    pour votre entreprise !
+  </h2>
+  <a href="/contact" class="mt-6 md:mt-0">
+    <button
+      class="bg-transparent text-[#1B15EA] border border-[#1B15EA] text-lg md:text-xl py-4 px-8 rounded-full shadow-lg hover:bg-[#1B15EA] hover:text-white transition font-normal">
+      Contactez nous
+    </button>
+  </a>
+</div>
+<button id="back-to-top" (click)="scrollToTop()"
+  class="fixed p-3 rounded-full shadow-lg transition duration-300 hidden flex items-center space-x-4 sm:bg-[#ffffff81] lg:right-16 lg:bottom-16 hover:bg-[#1B15EA] hover:text-white">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+  </svg>
+  <span class="font-bold text-black hover:text-white text-lg">Back to Top</span>
+</button>
+<!-- Footer -->

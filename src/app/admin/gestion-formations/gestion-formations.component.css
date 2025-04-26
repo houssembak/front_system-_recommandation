@@ -1,0 +1,188 @@
+/* Overall container */
+.gestion-utilisateur {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Page header styles */
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Réduit l'espace entre le bouton et la barre de recherche */
+  }
+  
+  .header-actions button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .header-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Search box */
+  .search-box {
+    position: relative;
+    width: 200px; /* Réduit la largeur pour rapprocher l'input et le bouton */
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+    border-color: var(--primary-blue-light);
+    box-shadow: 0 0 0 3px rgba(27, 21, 234, 0.1);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: var(--black-shade);
+  }
+  
+  /* Form container */
+  form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input,
+  form label,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  form label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  form button[type="submit"] {
+    background-color: #007bff;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table styles */
+  .table-responsive {
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #d9534f;
+  }
+  
+  button + button {
+    background-color: #ffc107;
+    margin-left: 10px;
+  }
+  
+  button + button:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .content-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-actions {
+      margin-top: 10px;
+    }
+  
+    .table-responsive table {
+      font-size: 14px;
+    }
+  }
+  

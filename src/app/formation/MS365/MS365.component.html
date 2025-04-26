@@ -1,0 +1,666 @@
+
+<!-- Hero Section -->
+<section class="m365-hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="title-container">
+      <div class="title-line"></div>
+      <h1>Maîtrisez <span>Microsoft 365</span></h1>
+    </div>
+    <p class="hero-description">Découvrez toutes les fonctionnalités pour administrateurs et utilisateurs pour optimiser votre productivité</p>
+    
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Entreprises accompagnées</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Satisfaction clients</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Support technique</span>
+      </div>
+    </div>
+    
+    <div class="hero-cta-container">
+
+
+      
+
+      <button class="cta-btn secondary">
+        <i class="fas fa-info-circle"></i> Programme complet
+      </button>
+    </div>
+    
+    <div class="hero-meta">
+      <div class="meta-item">
+        <i class="fas fa-clock"></i> 3.5 heures de formation
+      </div>
+      <div class="meta-item">
+        <i class="fas fa-certificate"></i> Certification incluse
+      </div>
+      <div class="meta-item">
+        <i class="fas fa-user-tie"></i> Niveau: Débutant à Expert
+      </div>
+    </div>
+    
+    <div class="legal-badge">
+      <i class="fas fa-award"></i> Partenaire Gold Microsoft certifié | Solutions conformes RGPD
+    </div>
+  </div>
+</section>
+
+<!-- Features Overview Section -->
+<section class="features-overview">
+  <div class="section-container">
+    <div class="section-header">
+      <h2>Optimisez votre expérience Microsoft 365</h2>
+      <p class="section-subtitle">Découvrez comment tirer le meilleur parti de votre suite Microsoft 365</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="background-color: #0078D4;">
+          <i class="fas fa-users-cog"></i>
+        </div>
+        <h3>Gestion centralisée</h3>
+        <p>Administrez facilement tous vos utilisateurs, licences et paramètres de sécurité depuis un seul tableau de bord.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon" style="background-color: #107C10;">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Sécurité renforcée</h3>
+        <p>Protégez vos données avec des outils avancés de sécurité et conformité intégrés à Microsoft 365.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon" style="background-color: #FFB900;">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Productivité maximale</h3>
+        <p>Boostez l'efficacité de vos équipes avec des outils collaboratifs puissants et intégrés.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon" style="background-color: #50E6FF;">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <h3>Accessibilité totale</h3>
+        <p>Accédez à vos fichiers et applications depuis n'importe quel appareil, à tout moment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curriculum Section - Admin & User Features -->
+<section class="curriculum-section">
+  <div class="section-container">
+    <div class="section-header">
+      <h2>Fonctionnalités Microsoft 365</h2>
+      <p class="section-subtitle">Découvrez tout ce que vous pouvez accomplir</p>
+    </div>
+
+    <div class="curriculum-tabs">
+      <div class="tab-header">
+        <button class="tab-btn active" (click)="activeTab = 'admin-tab'">
+          <i class="fas fa-user-shield"></i> Pour Administrateurs
+        </button>
+        <button class="tab-btn" (click)="activeTab = 'user-tab'">
+          <i class="fas fa-user-tie"></i> Pour Utilisateurs
+        </button>
+      </div>
+
+      <!-- Admin Features Tab -->
+      <div class="tab-content" [class.active]="activeTab === 'admin-tab'">
+        <div class="module">
+          <div class="module-header">
+            <div class="module-icon" style="background-color: #0078D4;">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <div>
+              <h3>Fonctionnalités pour l'Administration Microsoft 365</h3>
+              <p class="module-subtitle">L'administrateur gère l'ensemble des services et paramètres</p>
+            </div>
+          </div>
+          
+          <div class="module-content">
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Gestion des utilisateurs et des licences</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Création, suppression et modification des comptes utilisateurs</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Attribution et gestion des licences Microsoft 365</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Gestion des rôles et permissions (admin général, admin Exchange, admin SharePoint, etc.)</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Sécurité et conformité</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Configuration de l'authentification multifacteur (MFA)</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Gestion des règles de protection des données (DLP, accès conditionnel)</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Surveillance des connexions et gestion des alertes de sécurité</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Gestion des services et applications</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Déploiement et configuration d'Outlook, Teams, OneDrive, SharePoint, etc.</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Gestion des stratégies de messagerie (Exchange Online)</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Surveillance des performances et mises à jour des applications</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Support et dépannage</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Accès au centre d'administration Microsoft 365</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Gestion des tickets et incidents</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Surveillance des usages et optimisation des services</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Gestion des appareils et accès</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Configuration des stratégies d'accès aux applications</li>
+                <li><i class="fas fa-chevron-right" style="color: #0078D4;"></i> Gestion des sessions et des accès des utilisateurs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Features Tab -->
+      <div class="tab-content" [class.active]="activeTab === 'user-tab'">
+        <div class="module">
+          <div class="module-header">
+            <div class="module-icon" style="background-color: #50E6FF;">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h3>Fonctionnalités pour les Utilisateurs Microsoft 365</h3>
+              <p class="module-subtitle">L'utilisateur utilise les outils pour travailler et collaborer</p>
+            </div>
+          </div>
+          
+          <div class="module-content">
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Utilisation des applications Office</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Accès à Outlook, Teams, Word, Excel, PowerPoint, OneDrive</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Stockage et partage de fichiers via OneDrive et SharePoint</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Collaboration en temps réel sur des documents</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Personnalisation et productivité</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Gestion des paramètres personnels (signature email, thèmes, notifications)</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Automatisation des tâches avec Power Automate</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Participation aux réunions et webinaires via Teams</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Sécurité et accès</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Connexion avec MFA et récupération de compte</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Accès sécurisé aux fichiers et applications</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Signalement des emails de phishing et des problèmes de sécurité</li>
+              </ul>
+            </div>
+
+            <div class="feature-category">
+              <div class="feature-title">
+                <span class="check-icon"><i class="fas fa-check-circle" style="color: #107C10;"></i></span>
+                <h4>Support et assistance</h4>
+              </div>
+              <ul class="feature-items">
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Accès à la documentation et aux FAQ</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Création de tickets pour le support IT</li>
+                <li><i class="fas fa-chevron-right" style="color: #50E6FF;"></i> Participation aux formations et ressources Microsoft</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course Overview Section -->
+<section class="course-overview-section">
+  <div class="container">
+    <div class="course-header">
+      <h2>Microsoft 365 Administration Mastery</h2>
+      <div class="course-meta">
+        <span class="rating"><i class="fas fa-star" style="color: #FFB900;"></i><i class="fas fa-star" style="color: #FFB900;"></i><i class="fas fa-star" style="color: #FFB900;"></i><i class="fas fa-star" style="color: #FFB900;"></i><i class="fas fa-star-half-alt" style="color: #FFB900;"></i> 4.9</span>
+        <span class="students"><i class="fas fa-users" style="color: #0078D4;"></i> 500+ entreprises satisfaites</span>
+        <span class="duration"><i class="far fa-clock" style="color: #50E6FF;"></i> 3.5 heures</span>
+      </div>
+    </div>
+
+    <div class="course-content-wrapper">
+      <div class="course-main-content">
+        <!-- About This Course Section -->
+        <div class="course-section">
+          <h3><i class="fas fa-info-circle" style="color: #0078D4;"></i> À propos de cette formation</h3>
+          <p>Découvrez comment maximiser l'utilisation de Microsoft 365 dans votre entreprise grâce à notre expertise de partenaire Microsoft CSP. Cette formation complète couvre tous les aspects essentiels pour les administrateurs et les utilisateurs finaux.</p>
+          
+          <div class="course-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check" style="color: #107C10;"></i>
+              <span>Formation pratique avec des cas réels</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check" style="color: #107C10;"></i>
+              <span>Accès aux ressources exclusives</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check" style="color: #107C10;"></i>
+              <span>Support post-formation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- What You'll Learn Section -->
+        <div class="course-section">
+          <h3><i class="fas fa-graduation-cap" style="color: #FFB900;"></i> Ce que vous allez apprendre</h3>
+          <div class="learning-items">
+            <div class="learning-item">
+              <i class="fas fa-check-circle" style="color: #107C10;"></i>
+              <span>Gestion complète des licences et utilisateurs</span>
+            </div>
+            <div class="learning-item">
+              <i class="fas fa-check-circle" style="color: #107C10;"></i>
+              <span>Configuration avancée de la sécurité</span>
+            </div>
+            <div class="learning-item">
+              <i class="fas fa-check-circle" style="color: #107C10;"></i>
+              <span>Optimisation des outils collaboratifs</span>
+            </div>
+            <div class="learning-item">
+              <i class="fas fa-check-circle" style="color: #107C10;"></i>
+              <span>Dépannage des problèmes courants</span>
+            </div>
+            <div class="learning-item">
+              <i class="fas fa-check-circle" style="color: #107C10;"></i>
+              <span>Meilleures pratiques pour les utilisateurs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Admin Features Module -->
+        <div class="course-module">
+          <div class="module-header">
+            <h4><i class="fas fa-user-shield" style="color: #0078D4;"></i> Module 1: Fonctionnalités d'Administration</h4>
+            <span class="module-duration"><i class="far fa-clock" style="color: #50E6FF;"></i> 5 unités • 2h de contenu</span>
+          </div>
+          
+          <div class="module-content">
+            <div class="lecture-item">
+              <div class="lecture-header">
+                <i class="fas fa-play-circle" style="color: #0078D4;"></i>
+                <div>
+                  <h5>Gestion des utilisateurs et licences</h5>
+                  <span class="lecture-duration">25 min</span>
+                </div>
+              </div>
+              <ul class="lecture-points">
+                <li>Création, suppression et modification des comptes utilisateurs</li>
+                <li>Attribution et gestion des licences Microsoft 365</li>
+                <li>Gestion des rôles et permissions</li>
+              </ul>
+            </div>
+
+            <div class="lecture-item">
+              <div class="lecture-header">
+                <i class="fas fa-play-circle" style="color: #0078D4;"></i>
+                <div>
+                  <h5>Sécurité et conformité</h5>
+                  <span class="lecture-duration">30 min</span>
+                </div>
+              </div>
+              <ul class="lecture-points">
+                <li>Configuration de l'authentification multifacteur (MFA)</li>
+                <li>Gestion des règles de protection des données</li>
+                <li>Surveillance des connexions</li>
+              </ul>
+            </div>
+
+            <div class="lecture-item">
+              <div class="lecture-header">
+                <i class="fas fa-play-circle" style="color: #0078D4;"></i>
+                <div>
+                  <h5>Gestion des services</h5>
+                  <span class="lecture-duration">35 min</span>
+                </div>
+              </div>
+              <ul class="lecture-points">
+                <li>Déploiement des applications</li>
+                <li>Configuration de Exchange Online</li>
+                <li>Surveillance des performances</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- User Features Module -->
+        <div class="course-module">
+          <div class="module-header">
+            <h4><i class="fas fa-user-tie" style="color: #50E6FF;"></i> Module 2: Fonctionnalités Utilisateurs</h4>
+            <span class="module-duration"><i class="far fa-clock" style="color: #50E6FF;"></i> 4 unités • 1.5h de contenu</span>
+          </div>
+          
+          <div class="module-content">
+            <div class="lecture-item">
+              <div class="lecture-header">
+                <i class="fas fa-play-circle" style="color: #50E6FF;"></i>
+                <div>
+                  <h5>Applications Office</h5>
+                  <span class="lecture-duration">20 min</span>
+                </div>
+              </div>
+              <ul class="lecture-points">
+                <li>Accès à Outlook, Teams, Word, Excel, PowerPoint</li>
+                <li>Stockage et partage via OneDrive et SharePoint</li>
+                <li>Collaboration en temps réel</li>
+              </ul>
+            </div>
+
+            <div class="lecture-item">
+              <div class="lecture-header">
+                <i class="fas fa-play-circle" style="color: #50E6FF;"></i>
+                <div>
+                  <h5>Productivité</h5>
+                  <span class="lecture-duration">25 min</span>
+                </div>
+              </div>
+              <ul class="lecture-points">
+                <li>Gestion des paramètres personnels</li>
+                <li>Automatisation des tâches avec Power Automate</li>
+                <li>Participation aux réunions Teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Sidebar -->
+      <div class="course-sidebar">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h4>Formation Microsoft 365</h4>
+            <div class="price-tag">
+
+              <div class="price">56DT<span>/mois</span></div>
+              <div class="billing-info">ou 397DT à l'achat</div>
+
+              
+
+            </div>
+          </div>
+          
+          <button class="enroll-btn" style="background-color: #FFB900;">
+
+            <i class="fas fa-shopping-cart"></i> Ajouter au panier 
+
+           
+          </button>
+          
+          <div class="course-details">
+            <div class="detail-item">
+              <i class="far fa-clock" style="color: #50E6FF;"></i>
+              <span>Durée: 3.5 heures</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-signal" style="color: #0078D4;"></i>
+              <span>Niveau: Débutant à Avancé</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-certificate" style="color: #107C10;"></i>
+              <span>Certificat d'achèvement</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-language" style="color: #7B2CBF;"></i>
+              <span>Français</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-mobile-alt" style="color: #0078D4;"></i>
+              <span>Accès mobile</span>
+            </div>
+          </div>
+          
+          <div class="money-back">
+            <i class="fas fa-shield-alt" style="color: #107C10;"></i>
+            <span>Garantie satisfait ou remboursé 30 jours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instructor Section -->
+<section class="instructor-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Nos formateurs experts</h2>
+      <p class="section-subtitle">Apprenez auprès des meilleurs spécialistes Microsoft 365</p>
+    </div>
+    
+    <div class="instructor-card">
+      <div class="instructor-img">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFFQN7-2r8QqA/profile-displayphoto-shrink_200_200/B4EZSOz5eFHgAY-/0/1737562757379?e=1747872000&v=beta&t=D0S_o5lNLG4BuNlCu-85i3aF1cFn8sDuPrGausyFCeE" alt="Mehdi Channoufi." class="w-full h-full object-cover">
+      </div>
+      <div class="instructor-info">
+        <h4>Équipe Timsoft</h4>
+        <p class="title">Experts certifiés Microsoft Gold Partner</p>
+        <div class="rating">
+          <i class="fas fa-star" style="color: #FFB900;"></i>
+          <i class="fas fa-star" style="color: #FFB900;"></i>
+          <i class="fas fa-star" style="color: #FFB900;"></i>
+          <i class="fas fa-star" style="color: #FFB900;"></i>
+          <i class="fas fa-star-half-alt" style="color: #FFB900;"></i>
+          <span>4.9/5 (128 évaluations)</span>
+        </div>
+        <p class="bio">Notre équipe d'experts possède plus de 15 ans d'expérience dans l'implémentation et la gestion de solutions Microsoft 365 pour des entreprises de toutes tailles. Nous avons accompagné plus de 500 entreprises dans leur transformation digitale.</p>
+        
+        <div class="expertise">
+          <div class="expertise-item">
+            <i class="fas fa-award" style="color: #FFB900;"></i>
+            <span>10+ certifications Microsoft</span>
+          </div>
+          <div class="expertise-item">
+            <i class="fas fa-project-diagram" style="color: #0078D4;"></i>
+            <span>200+ projets réalisés</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Nos Clients</h2>
+      <p class="section-subtitle">Découvrez ce que nos clients disent de notre formation</p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <!-- Témoignage 1 -->
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="rating">
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+          </div>
+          <p class="testimonial-text">"Cette formation a complètement transformé notre façon d'utiliser Microsoft 365. Nous avons pu optimiser nos coûts de licence et améliorer la sécurité de notre organisation."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://timsoft-group.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Fdlfxlgbr7%2Fimage%2Fupload%2Fv1727430787%2FRectangle_882_9_40c0d09ad2.png&w=1080&q=75" alt="Yosra KORT">
+          <div>
+            <h5>Yosra KORT</h5>
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- Témoignage 2 -->
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="rating">
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+          </div>
+          <p class="testimonial-text">"Les formateurs sont extrêmement compétents et pédagogues. J'ai enfin compris comment configurer correctement les politiques de sécurité pour notre entreprise."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQE5HTbPIxXvww/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1675328977922?e=1749686400&v=beta&t=tOgNJM7cyH9Y4eD0tunghfK54cRLRp-mvjGaUy7-UhU" alt="Ahmed Bouzelfa">
+          <div>
+            <h5>Sinda Riahi</h5>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Témoignage 3 -->
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="rating">
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+            <i class="fas fa-star" style="color: #FFB900;"></i>
+          </div>
+          <p class="testimonial-text">"La partie sur les bonnes pratiques pour les utilisateurs finaux a été particulièrement appréciée par nos équipes. La productivité a augmenté de 30%."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://media.licdn.com/dms/image/v2/C4E03AQG3c3XgWTFeaA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1646690714817?e=1749686400&v=beta&t=oR4WKOkE_qbjY4zy42n4bAin3HhOOKJN6aEiUVef4XQ" alt="Maroua Ajmi">
+          <div>
+            <h5>Maroua Ajmi</h5>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Questions fréquentes</h2>
+      <p class="section-subtitle">Trouvez des réponses aux questions les plus courantes</p>
+    </div>
+    
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Quelle est la durée d'accès à la formation ?</h4>
+          <i class="fas fa-chevron-down" style="color: #0078D4;"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Vous avez un accès à vie au contenu de la formation après votre inscription. Toutes les mises à jour futures sont incluses gratuitement.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>La formation est-elle adaptée aux débutants ?</h4>
+          <i class="fas fa-chevron-down" style="color: #0078D4;"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Absolument ! Nous commençons par les bases et progressons vers des sujets plus avancés. La formation est conçue pour tous les niveaux.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Obtenez-vous un certificat à la fin ?</h4>
+          <i class="fas fa-chevron-down" style="color: #0078D4;"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Oui, un certificat d'achèvement est délivré après avoir terminé tous les modules et réussi l'évaluation finale.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Puis-je poser des questions aux formateurs ?</h4>
+          <i class="fas fa-chevron-down" style="color: #0078D4;"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Oui, notre plateforme inclut un forum où vous pouvez poser vos questions et nos formateurs y répondent sous 24h.</p>
+        </div>
+      </div>
+    </div>
+    
+   <div class="enterprise-cta">
+  <a href="/NousContacter" class="enterprise-btn">
+    <span class="btn-content">
+      <svg class="building-icon" viewBox="0 0 24 24">
+        <path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m-4 0h4"/>
+      </svg>
+      <span class="btn-text">Vous avez d'autres questions ?</span>
+    </span>
+    <span class="hover-text">Contactez-nous pour une offre personnalisée</span>
+  </a>
+</div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section" style="background: linear-gradient(135deg, #0078D4, #106EBE);">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Prêt à maîtriser Microsoft 365 ?</h2>
+      <p>Rejoignez des centaines d'administrateurs et d'utilisateurs qui ont déjà optimisé leur productivité avec notre formation.</p>
+      <button class="cta-btn" style="background-color: #FFB900;">
+        <i class="fas fa-rocket"></i> Commencer maintenant
+      </button>
+    </div>
+  </div>
+</section>
+

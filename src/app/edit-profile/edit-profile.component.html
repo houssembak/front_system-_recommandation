@@ -1,0 +1,42 @@
+<div class="profile-edit-container">
+  <h1 class="edit-title">Modifier le Profil</h1>
+
+  <form class="edit-form" (ngSubmit)="onSubmit()">
+    <div class="name-row">
+      <div class="input-group">
+        <label for="firstName" class="form-label" aria-label="Prénom">Prénom *</label>
+        <input type="text" id="firstName" class="form-input"
+               [(ngModel)]="user.firstName" name="firstName"
+               placeholder="Votre prénom" required aria-required="true">
+      </div>
+
+      <div class="input-group">
+        <label for="lastName" class="form-label" aria-label="Nom">Nom *</label>
+        <input type="text" id="lastName" class="form-input"
+               [(ngModel)]="user.lastName" name="lastName"
+               placeholder="Votre nom" required aria-required="true">
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label class="form-label" for="imageUpload">Photo de profil</label>
+      <div class="image-upload-wrapper">
+        <div class="image-preview" id="imagePreview">
+          <ng-container *ngIf="profileImage; else noImage">
+            <img [src]="profileImage" alt="Profile preview" class="preview-img">
+          </ng-container>
+          <ng-template #noImage>
+            <i class="upload-icon fas fa-camera"></i>
+            <span class="placeholder-text">Aucune image sélectionnée</span>
+          </ng-template>
+        </div>
+        <label for="imageUpload" class="upload-btn">Choisir une image</label>
+        <input type="file" id="imageUpload" accept="image/*" (change)="handleImageUpload($event)" style="display: none;" aria-label="Choisir une image">
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button type="submit" class="submit-btn" aria-label="Enregistrer les modifications">Enregistrer</button>
+    </div>
+  </form>
+</div>

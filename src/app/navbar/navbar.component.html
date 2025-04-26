@@ -1,0 +1,309 @@
+
+
+  
+  
+  
+  
+ 
+<nav class="relative flex justify-between items-center px-6 py-3 z-50 bg-white">
+  <!-- Logo -->
+  <a class="logo text-3xl font-bold leading-none" routerLink="/">
+    <img
+      src="https://emc2rrspvpp.exactdn.com/wp-content/uploads/2024/10/Branding-Logo-Timsoft-Blue.png?lossy=1&quality=92&webp=92&ssl=1"
+      class="h-16 transition-all duration-300" alt="logo">
+  </a>
+
+  <!-- Main Navigation -->
+  <ul class="hidden lg:flex lg:mx-auto lg:items-center lg:space-x-1">
+    <li><a class="nav-link" routerLink="/acceuil">Accueil</a></li>
+
+    <!-- Nos Produits -->
+    <li>
+      <a class="nav-link flex items-center" routerLink="/products">
+        Nos Produits
+      </a>
+    </li>
+
+    <!-- Nos Services -->
+    <li class="relative group">
+      <a class="nav-link flex items-center">
+        Nos Services <svg class="ml-1 w-4 h-4" fill="none" stroke="#1B15EA" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </a>
+      <div class="dropdown-menu w-[32rem] p-4 grid grid-cols-2 gap-4">
+        <!-- Group: Administration -->
+        <div>
+          <h3 class="dropdown-header cursor-pointer flex items-center justify-between"
+            onclick="this.nextElementSibling.classList.toggle('hidden')">
+            <span>
+              <i class="fas fa-server mr-2 text-[#1B15EA]"></i> Administration
+            </span>
+            <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="#1B15EA" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </h3>
+          <ul class="hidden">
+            <li><a class="dropdown-item" routerLink="/administration-microsoft-365">
+                <i class="fab fa-microsoft mr-2 text-[#1B15EA]"></i> Microsoft 365
+              </a></li>
+            <li><a class="dropdown-item" routerLink="/administration-azure">
+                <i class="fab fa-microsoft mr-2 text-[#1B15EA]"></i> Azure
+              </a></li>
+            <li><a class="dropdown-item" routerLink="/administration-systeme">
+                <i class="fas fa-network-wired mr-2 text-[#1B15EA]"></i> Réseau & Système
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Group: Consulting -->
+        <div>
+          <h3 class="dropdown-header cursor-pointer flex items-center justify-between"
+            onclick="this.nextElementSibling.classList.toggle('hidden')">
+            <span>
+              <i class="fas fa-user-tie mr-2 text-[#1B15EA]"></i> Consulting
+            </span>
+            <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="#1B15EA" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </h3>
+          <ul class="hidden">
+            <li><a class="dropdown-item" routerLink="/cyber-consulting">
+                <i class="fas fa-shield-alt mr-2 text-[#1B15EA]"></i> Cyber Sécurité
+              </a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructures-cloud">
+                <i class="fas fa-cloud mr-2 text-[#1B15EA]"></i> Infra IT
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Group: Développement -->
+        <div>
+          <h3 class="dropdown-header cursor-pointer flex items-center justify-between"
+            onclick="this.nextElementSibling.classList.toggle('hidden')">
+            <span>
+              <i class="fas fa-code mr-2 text-[#1B15EA]"></i> Développement
+            </span>
+            <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="#1B15EA" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </h3>
+          <ul class="hidden">
+            <li><a class="dropdown-item" routerLink="/microsoft-power">
+                <i class="fas fa-bolt mr-2 text-[#1B15EA]"></i> Power Apps
+              </a></li>
+            <li><a class="dropdown-item" routerLink="/power-automate">
+                <i class="fas fa-robot mr-2 text-[#1B15EA]"></i> Power Automate
+              </a></li>
+            <li><a class="dropdown-item" routerLink="/microsoft-bi">
+                <i class="fas fa-chart-bar mr-2 text-[#1B15EA]"></i> Power BI
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Group: Support -->
+        <div>
+          <h3 class="dropdown-header cursor-pointer flex items-center justify-between"
+            onclick="this.nextElementSibling.classList.toggle('hidden')">
+            <span>
+              <i class="fas fa-headset mr-2 text-[#1B15EA]"></i> Support
+            </span>
+            <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="#1B15EA" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </h3>
+          <ul class="hidden">
+            <li><a class="dropdown-item" routerLink="/support-it">
+                <i class="fas fa-desktop mr-2 text-[#1B15EA]"></i> Support IT
+              </a></li>
+            <li><a class="dropdown-item" routerLink="/support-applicatif">
+                <i class="fas fa-tools mr-2 text-[#1B15EA]"></i> Support Applicatif
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <!-- Nos Formations -->
+    <li class="relative group">
+      <a class="nav-link flex items-center">
+        Nos Formations <svg class="ml-1 w-4 h-4" fill="none" stroke="#1B15EA" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </a>
+      <div class="dropdown-menu">
+        <ul class="py-2">
+          <li><a class="dropdown-item" routerLink="/power-bi-pro">
+              <i class="fas fa-certificate mr-2 text-[#FFE600]"></i> Power BI Pro
+            </a></li>
+          <li><a class="dropdown-item" routerLink="/power-bi">
+              <i class="fas fa-certificate mr-2 text-[#FFE600]"></i> Power BI
+            </a></li>
+          <li><a class="dropdown-item" routerLink="/MS365">
+              <i class="fas fa-certificate mr-2 text-[#FFE600]"></i> MS365
+            </a></li>
+          <li><a class="dropdown-item" routerLink="/power-automate-formation">
+              <i class="fas fa-certificate mr-2 text-[#FFE600]"></i> Power Auto
+            </a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li><a class="nav-link" routerLink="/contact">Contact</a></li>
+  </ul>
+
+  <!-- Right Actions -->
+  <div class="hidden lg:flex lg:items-center space-x-2">
+    <!-- Search Icon -->
+    <!-- In your HTML, replace the search icon section with this: -->
+    <!-- Search Bar -->
+    <!-- Replace the search icon with this: -->
+    <div class="relative">
+      <input type="text" placeholder="Rechercher..."
+        class="border-b border-[#1B15EA] bg-transparent px-2 py-1 text-sm w-32 focus:w-64 transition-all duration-300 focus:outline-none">
+      <i class="fas fa-search absolute right-2 top-2 text-[#1B15EA]"></i>
+    </div>
+    <!-- Panier -->
+    <div class="relative">
+      <a class="action-btn relative" href="#" title="Cart" (click)="toggleCart($event)">
+        <i class="fas fa-shopping-cart text-lg text-[#1B15EA]"></i>
+        <span
+          class="absolute -top-1 -right-1 bg-[#EE1C25] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">{{cartItemCount}}</span>
+      </a>
+
+      <!-- Cart Dropdown -->
+      <div class="cart-dropdown absolute right-0 mt-2 w-96 bg-white rounded-lg shadow-xl z-50 border border-gray-200"
+        *ngIf="showCart">
+        <div class="p-4">
+          <!-- Cart Header -->
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-lg font-bold text-[#1B15EA]">
+              <i class="fas fa-shopping-cart mr-2"></i> Votre Panier
+            </h3>
+            <span class="text-sm text-gray-500">{{cartItems.length}} articles</span>
+          </div>
+
+          <!-- Cart Items Container -->
+          <div class="max-h-96 overflow-y-auto">
+            <!-- Items List -->
+            <div *ngFor="let item of cartItems" class="cart-item border-b border-gray-100 py-3">
+              <div class="flex items-center">
+                <div *ngIf="item.type === 'product'; else trainingIcon">
+                  <img [src]="item.image" [alt]="item.name" class="w-16 h-16 object-cover rounded">
+                </div>
+                <ng-template #trainingIcon>
+                  <div class="w-16 h-16 bg-[#FFE600] rounded flex items-center justify-center">
+                    <i class="fas fa-certificate text-2xl text-white"></i>
+                  </div>
+                </ng-template>
+
+                <div class="ml-3 flex-1">
+                  <h4 class="font-medium">{{item.name}}</h4>
+                  <p class="text-sm text-gray-500">{{item.description}}</p>
+                  <div class="flex justify-between items-center mt-1">
+                    <span class="font-bold text-[#1B15EA]">{{item.price}} DT</span>
+                    <div class="flex items-center">
+                      <button class="quantity-btn text-gray-500" (click)="decreaseQuantity(item)">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <span class="mx-2">{{item.quantity}}</span>
+                      <button class="quantity-btn text-gray-500" (click)="increaseQuantity(item)">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button class="remove-btn ml-2 text-gray-400 hover:text-red-500" (click)="removeItem(item)">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cart Footer -->
+          <div class="mt-4 pt-4 border-t border-gray-200">
+            <div class="flex justify-between mb-2">
+              <span>Total:</span>
+              <span class="font-bold text-lg text-[#1B15EA]">{{getTotal()}} DT</span>
+            </div>
+            <button
+              class="w-full bg-[#1B15EA] hover:bg-[#0F0D9E] text-white py-2 rounded-lg font-medium transition duration-300">
+              <i class="fas fa-credit-card mr-2"></i> Passer la commande
+            </button>
+            <a href="#" class="block text-center text-sm text-[#1B15EA] mt-2 hover:underline"
+              (click)="showCart = false">
+              <i class="fas fa-shopping-bag mr-1"></i> Continuer mes achats
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Espace Client Dropdown -->
+    <div class="relative group">
+      <button class="espace-client-link flex items-center">
+        <i class="fas fa-user-circle mr-2 text-xl text-[#1B15EA]"></i>
+        <span *ngIf="userName; else defaultText">{{ userName }}</span>
+        <ng-template #defaultText>Espace Client</ng-template>
+        <svg class="ml-1 w-4 h-4" fill="none" stroke="#1B15EA" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+
+      <div class="dropdown-menu right-0 w-56">
+        <!-- Si connecté -->
+        <ng-container *ngIf="isLoggedIn; else notLoggedIn">
+          <a class="dropdown-item" routerLink="/edit-profile">
+            <i class="fas fa-user mr-2 text-[#1B15EA]"></i> Profile
+          </a>
+          <button class="dropdown-item" (click)="logout()">
+            <i class="fas fa-sign-out-alt mr-2 text-[#1B15EA]"></i> Logout
+          </button>
+        </ng-container>
+
+        <!-- Si pas connecté -->
+        <ng-template #notLoggedIn>
+          <a class="dropdown-item" routerLink="/signIn">
+            <i class="fas fa-sign-in-alt mr-2 text-[#1B15EA]"></i> Sign In
+          </a>
+          <a class="dropdown-item" routerLink="/signUp">
+            <i class="fas fa-user-plus mr-2 text-[#1B15EA]"></i> Sign Up
+          </a>
+        </ng-template>
+
+        <div class="border-t border-[#A6E1FD] my-1"></div>
+      </div>
+    </div>
+
+
+    <!-- Multilingue Dropdown -->
+    <div class="relative group">
+      <button class="multilingue-link flex items-center">
+        <i class="fas fa-globe mr-2 text-[#1B15EA]"></i>
+        <span>Fr</span>
+        <svg class="ml-1 w-4 h-4" fill="none" stroke="#1B15EA" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="dropdown-menu right-0 w-32">
+        <a class="dropdown-item" href="#">
+          <i class="fas fa-language mr-2 text-[#1B15EA]"></i> Français
+        </a>
+        <a class="dropdown-item" href="#">
+          <i class="fas fa-language mr-2 text-[#1B15EA]"></i> English
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu button -->
+  <button class="lg:hidden text-[#1B15EA] focus:outline-none">
+    <i class="fas fa-bars text-2xl"></i>
+  </button>
+</nav>
