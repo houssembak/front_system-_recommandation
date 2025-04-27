@@ -25,6 +25,8 @@
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "frontend": "file:",
+    "keycloak-angular": "^15.2.1",
+    "keycloak-js": "^24.0.3",
     "ngx-countup": "^13.2.0",
     "primeicons": "^7.0.0",
     "primeng": "^17.18.15",
