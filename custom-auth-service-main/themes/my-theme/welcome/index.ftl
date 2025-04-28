@@ -43,8 +43,8 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
       <div class="welcome-header">
-        <img src="${resourcesPath}/my-logo.png" alt="${productName}" border="0" />
-        <h1>Welcome to <strong> Spark-it</strong></h1>
+        <img src="${resourcesPath}/logo.png" alt="${productName}" border="0" />
+        <h1>Welcome to <strong> Keycloak </strong></h1>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-4">
