@@ -1,0 +1,85 @@
+/* Container principal */
+.form-container {
+    background: linear-gradient(to bottom right, #f4f7fe, #e8edff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  
+  /* Carte du formulaire */
+  .form-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid #c7ddff;
+  }
+  
+  /* Titre */
+  .form-title {
+    text-align: center;
+    color: #1B15EA;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  
+  /* Champs de saisie */
+  .form-input,
+  .form-textarea,
+  .form-date {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-date:focus {
+    border-color: #1B15EA;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(27, 21, 234, 0.1);
+  }
+  
+  /* Labels */
+  .form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  /* Erreurs */
+  .form-error {
+    color: #e53935;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+  
+  /* Bouton */
+  .form-button {
+    width: 100%;
+    background-color: #1B15EA;
+    color: white;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .form-button:hover {
+    background-color: #0F0D9E;
+    box-shadow: 0 6px 12px rgba(27, 21, 234, 0.3);
+  }
+  
