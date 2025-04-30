@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
+import { KeycloakService } from 'keycloak-angular';
 
 interface CartItem {
   id: number;
@@ -62,7 +63,7 @@ export class NavbarComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private keycloakService: KeycloakService) { }
 
   ngOnInit(): void {
     const user = localStorage.getItem('user');
@@ -144,5 +145,8 @@ export class NavbarComponent implements OnInit {
     if (!target.closest('.services-dropdown-trigger') && !target.closest('.services-dropdown')) {
       this.isDropdownVisible = false;
     }
+  }
+  logoutKeycloak() {
+    this.keycloakService.logout(window.location.origin);
   }
 }

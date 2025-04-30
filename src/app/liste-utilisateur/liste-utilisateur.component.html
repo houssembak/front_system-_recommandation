@@ -1,0 +1,22 @@
+<div class="p-6">
+    <h2 class="text-2xl font-bold mb-6 text-[#1B15EA]">👥 Liste des utilisateurs</h2>
+
+    <table class="w-full bg-white border border-gray-300 shadow rounded">
+        <thead class="bg-[#1B15EA] text-white">
+            <tr>
+                <th class="px-4 py-2 text-left">Nom</th>
+                <th class="px-4 py-2 text-left">Email</th>
+                <th class="px-4 py-2 text-left">Rôle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users" class="border-b hover:bg-gray-50">
+                <td class="px-4 py-2">{{ user.nom }}</td>
+                <td class="px-4 py-2">{{ user.email }}</td>
+                <td class="px-4 py-2">
+                    <!-- <span>{{ user.role }}</span> -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,37 @@
+<div class="p-8">
+    <h2 class="text-2xl font-bold mb-6 text-[#1B15EA]">📋 Liste des Réclamations</h2>
+  
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-md">
+        <thead class="bg-[#1B15EA] text-white">
+          <tr>
+            <th class="px-6 py-3 text-left">Sujet</th>
+            <th class="px-6 py-3 text-left">Description</th>
+            <th class="px-6 py-3 text-left">Date</th>
+            <th class="px-6 py-3 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let r of reclamations" class="border-t hover:bg-gray-50">
+            <td class="px-6 py-4">{{ r.sujet }}</td>
+            <td class="px-6 py-4">{{ r.description }}</td>
+            <td class="px-6 py-4">{{ r.date }}</td>
+            <td class="px-6 py-4 text-center space-x-2">
+              <button
+                class="px-4 py-1 rounded text-white bg-green-500 hover:bg-green-600"
+                [disabled]="r.confirmed"
+                (click)="confirmReclamation(r.id)">
+                {{ r.confirmed ? 'Confirmée' : 'Confirmer' }}
+              </button>
+              <button
+                class="px-4 py-1 rounded text-white bg-red-500 hover:bg-red-600"
+                (click)="deleteReclamation(r.id)">
+                Supprimer
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

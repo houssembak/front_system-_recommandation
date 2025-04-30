@@ -1,19 +1,14 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { User } from '../models/user.model';
+import axios from 'axios';
 
-@Injectable({
-  providedIn: 'root'
-})
+const API_BASE_URL = 'http://localhost:8080/api';
+
 export class UserService {
-
-  readonly uri="http://localhost:8080/api/utilisateurs";
-  constructor(private http:HttpClient) { }
-
-  login(loginInfo:any){
-    return this.http.post(this.uri,loginInfo)
-  }
-  signup(loginInfo:any){
-    return this.http.post(this.uri,loginInfo);
+  async getAllUsers() {
+    const res = await axios.get(`${API_BASE_URL}/users`, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('token')}`
+      }
+    });
+    return res.data;
   }
 }

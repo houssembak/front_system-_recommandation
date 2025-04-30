@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from "../navbar/navbar.component";
 import { FooterComponent } from "../footer/footer.component";
-import { ContactService } from "../Service/contact.service";
 
 import Swal from 'sweetalert2';
 
@@ -21,7 +20,7 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private contactService: ContactService // <-- ajoute l'injection ici
+    // private contactService: ContactService // <-- ajoute l'injection ici
   ) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -46,7 +45,7 @@ export class ContactComponent implements OnInit {
     if (this.contactForm.valid) {
       try {
         const { name, email, subject, message } = this.contactForm.value;
-        await this.contactService.sendMessage(name, email, subject, message);
+    
 
         // SweetAlert de succès
         Swal.fire({

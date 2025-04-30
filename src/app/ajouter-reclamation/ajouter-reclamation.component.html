@@ -1,0 +1,36 @@
+<div class="form-container">
+    <div class="form-card">
+      <h2 class="form-title">📝 Ajouter une Réclamation</h2>
+  
+      <form  (ngSubmit)="onSubmit()" novalidate>
+  
+        <!-- Sujet -->
+        <div>
+          <label class="form-label">Sujet</label>
+          <input type="text" class="form-input" formControlName="sujet" placeholder="Ex. : Problème technique">
+          <div *ngIf="reclamationForm.get('sujet')?.invalid && reclamationForm.get('sujet')?.touched" class="form-error">
+            Sujet requis (max 100 caractères)
+          </div>
+        </div>
+  
+        <!-- Description -->
+        <div style="margin-top: 1rem;">
+          <label class="form-label">Description</label>
+          <textarea rows="5" class="form-textarea" formControlName="description" placeholder="Décrivez le problème..."></textarea>
+          <div *ngIf="reclamationForm.get('description')?.invalid && reclamationForm.get('description')?.touched" class="form-error">
+            Description obligatoire (min 10 caractères)
+          </div>
+        </div>
+  
+        <!-- Date -->
+        <div style="margin-top: 1rem;">
+          <label class="form-label">Date</label>
+          <input type="date" class="form-date" formControlName="date">
+        </div>
+  
+        <!-- Bouton -->
+        <button type="submit" class="form-button">📤 Envoyer la Réclamation</button>
+      </form>
+    </div>
+  </div>
+  
